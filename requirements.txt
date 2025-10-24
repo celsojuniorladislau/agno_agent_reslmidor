@@ -1,0 +1,28 @@
+# Agno Framework - Multi-agent framework
+agno>=2.2.1
+
+# Python REPL e utilitários
+python-dotenv>=1.0.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# LLM Providers
+anthropic>=0.71.0
+
+# Web Server e API
+fastapi>=0.120.0
+uvicorn[standard]>=0.38.0
+
+# Model Context Protocol
+mcp>=1.19.0
+
+# Testes
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# Opcional: ferramentas adicionais
+# httpx>=0.27.0  # Para chamadas HTTP (já incluso como dependência)
+# pandas>=2.0.0  # Para análise de dados
+# beautifulsoup4>=4.12.0  # Para web scraping
+

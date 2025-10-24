@@ -1,0 +1,55 @@
+# Regras do Cursor para Projeto Agno
+
+## Contexto do Projeto
+Este é um projeto de agente básico usando o framework Agno.
+Siga sempre as diretrizes do CLAUDE.md na raiz do projeto.
+
+## Princípios Fundamentais
+
+1. **NUNCA modifique arquivos de teste** - Testes são sagrados e escritos por humanos
+2. **NUNCA commite segredos** - Use sempre variáveis de ambiente
+3. **SEMPRE pergunte sobre lógica de negócio** - Não assuma requisitos
+4. **SEMPRE adicione type hints** - Python 3.10+ com tipos fortes
+5. **SEMPRE documente em português** - Este é um projeto brasileiro
+
+## Padrões de Código
+
+### Python
+- Use type hints em todas as funções
+- Docstrings em português com formato Google style
+- Máximo 100 caracteres por linha
+- Imports organizados: stdlib → terceiros → locais
+
+### Anchor Comments
+Use comentários especiais para documentação AI-friendly:
+- `# AIDEV-NOTE:` - Informação importante
+- `# AIDEV-TODO:` - Tarefa pendente
+- `# AIDEV-QUESTION:` - Dúvida
+- `# AIDEV-ANSWER:` - Resposta a uma pergunta anterior
+
+### Agno Específico
+- Use sempre `Agent` do agno.agent
+- Database: SQLite para dev, PostgreSQL para prod
+- Sempre habilite `add_history_to_context=True`
+- Sempre use `markdown=True` para formatação
+
+## Workflow
+
+1. **Explorar**: Leia arquivos relevantes antes de codificar
+2. **Planejar**: Faça um plano claro antes de implementar
+3. **Implementar**: Código limpo e bem documentado
+4. **Testar**: Lembre-se, humanos escrevem os testes!
+
+## Arquivos Importantes
+
+- `CLAUDE.md` - Documentação completa para o Claude
+- `agente_basico.py` - Código principal do agente
+- `tests/` - Testes (NÃO MODIFICAR)
+- `.env` - Segredos (NÃO COMMITAR)
+
+## Resources
+
+- Docs: https://docs.agno.com/
+- Repo: https://github.com/agno-agi/agno
+- Anthropic: https://docs.anthropic.com/
+
